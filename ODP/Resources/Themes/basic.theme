@@ -4,6 +4,7 @@
     <styleSheet href="css/roboto.min.css" />
     <styleSheet href="css/fa_all.min.css" />
     <styleSheet href="css/vuetify.min.css" />
+    <styleSheet href="css/app.css" />
    
     <metaData>
       <name>viewport</name>
