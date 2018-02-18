@@ -16,14 +16,19 @@
   &lt;xp:div&gt;&#xd;
     &lt;xp:span style="font-weight:bold;"&gt;&amp;lt;&#xd;
       &lt;%=this.tag%&gt;&#xd;
-&lt;%if (this.attribute.length&gt;0) {%&gt;&#xd;
-        &lt;xp:span style="font-weight:bold;font-weight:bold;color:rgb(0,128,0)"&gt; &#xd;
-          &lt;%for(var x=0;x&lt;this.attribute.length;x++){%&gt;&#xd;
-             &lt;%var a=eval(""+this.attribute+"");%&gt;&lt;%=a[x]%&gt;&#xd;
-              &lt;%}%&gt;&#xd;
-        &lt;/xp:span&gt;&#xd;
-&lt;%}%&gt;&#xd;
-        &lt;xp:span style="font-weight:bold;"&gt;&lt;/xp:span&gt;&amp;gt;&#xd;
+       &lt;xp:span style="font-weight:bold;font-weight:bold;color:rgb(0,128,0)"&gt;&#xd;
+        &lt;%if (this.attribute.length&gt;0) {%&gt;&#xd;
+         &#xd;
+            &lt;%for (var x=0;x&lt;this.attribute.length;x++){%&gt;&#xd;
+              &lt;%=this.attribute[x].name%&gt; &#xd;
+               &lt;%if (!this.attribute[x].minimized) {%&gt;&#xd;
+                  = &lt;%=this.attribute[x].value%&gt;,&#xd;
+                &lt;%}%&gt;  &#xd;
+         &#xd;
+          &lt;%}%&gt;&#xd;
+           &lt;/xp:span&gt; &amp;gt;&#xd;
+&#xd;
+            &lt;%}%&gt;&#xd;
     &lt;/xp:span&gt;&#xd;
     &lt;br /&gt;&#xd;
     &lt;xp:callback&gt;&lt;/xp:callback&gt;&#xd;
@@ -43,7 +48,7 @@
       <property-name>attribute</property-name>
       <property-class>java.util.Collection</property-class>
       <property-extension>
-        <property-item-class>string</property-item-class>
+        <property-item-class>com.ibm.xsp.complex.Attr</property-item-class>
         <collection-property>true</collection-property>
         <designer-extension>
           <editor/>

@@ -10,28 +10,33 @@
         <xc:vContainer fluid="false">
           <h1>{{message}}</h1>
           <xc:vComponent tag="v-layout">
-            <xc:this.attribute><xp:value>row</xp:value><xp:value>justify-center</xp:value></xc:this.attribute><xc:vComponent tag="v-dialog">
-              <xc:this.attribute>
-                <xp:value>v-model|dialog</xp:value>
-                <xp:value>persistent</xp:value>
-                <xp:value>max-width|290</xp:value>
 
+            <xc:this.attribute>
+              <xp:attr name="row" value=" " minimized="true"></xp:attr>
+              <xp:attr name="justify-center" value=" " minimized="true"></xp:attr>
+            </xc:this.attribute>
+            <xc:vComponent tag="v-dialog">
+              <xc:this.attribute>
+                <xp:attr name="max-width" value="290"></xp:attr>
+                <xp:attr minimized="true" name="persistent" value=" "></xp:attr>
+                <xp:attr name="v-model" value="dialog"></xp:attr>
               </xc:this.attribute>
               <xc:vComponent tag="v-btn">
                 Open Dialog
                 <xc:this.attribute>
-                  <xp:value>color|primary</xp:value>
-                  <xp:value>dark</xp:value>
-                  <xp:value>slot|activator</xp:value>
+                  <xp:attr name="color" value="primary"></xp:attr>
+                 
+                  <xp:attr name="slot" value="activator"></xp:attr>
                 </xc:this.attribute>
               </xc:vComponent>
 
               <xc:vComponent tag="v-card">
                 <xc:vComponent tag="v-card-title">
-                  <xc:this.attribute>
-                    <xp:value>class|headline</xp:value>
-                  </xc:this.attribute>
+
                   Use Google's location service?
+                  <xc:this.attribute>
+                    <xp:attr name="class" value="headline"></xp:attr>
+                  </xc:this.attribute>
                 </xc:vComponent><!-- v-card-title -->
                 <xc:vComponent tag="v-card-text">
                   Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are runnin
@@ -42,26 +47,29 @@
                 <xc:vComponent tag="v-spacer"></xc:vComponent>
 
                 <xc:vComponent tag="v-btn">
-                  <xc:this.attribute>
-                    <xp:value>color|green</xp:value>
-                    <xp:value>flat</xp:value>
-                    <xp:value>@click.native|dialog=false</xp:value>
-                  </xc:this.attribute>
+
                   Agree
+                  <xc:this.attribute>
+                    <xp:attr name="color" value="green darken-1"></xp:attr>
+                    <xp:attr name="flat" value=" " minimized="true"></xp:attr>
+                    <xp:attr name="@click.native" value="dialog=false"></xp:attr>
+                  </xc:this.attribute>
                 </xc:vComponent><!-- v-btn -->
                 <xc:vComponent tag="v-btn">
-                  <xc:this.attribute>
-                    <xp:value>color|green</xp:value>
-                    <xp:value>flat</xp:value>
-                    <xp:value>@click.native|dialog=false</xp:value>
-                  </xc:this.attribute>
+
                   Disagree
+                  <xc:this.attribute>
+                    <xp:attr name="color" value="green darken-1"></xp:attr>
+                    <xp:attr name="flat" value=" " minimized="true"></xp:attr>
+                    <xp:attr name="@click.native" value="dialog=false"></xp:attr>
+                  </xc:this.attribute>
                 </xc:vComponent><!-- v-btn -->
+
               </xc:vComponent><!-- v-card-action -->
             </xc:vComponent><!-- v-dialog -->
 
           </xc:vComponent><!-- v-layout -->
-          </xc:vContainer>
+        </xc:vContainer>
       </xc:vContent>
     </xc:vApp>
   </xp:div>

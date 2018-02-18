@@ -9,5 +9,5 @@
     <xc:mdiIcon iconName='account-plus' extraClass="yellow"></xc:mdiIcon>
   </xp:div>
   <i class="far fa-user"></i>
- 
- </xp:view>
+
+ ></xp:view>
