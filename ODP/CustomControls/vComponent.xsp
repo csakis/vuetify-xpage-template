@@ -6,7 +6,8 @@
   for(var i=0; i<length; i++){
     var attrArray = compositeData.attribute[i].split("|");
     if (attrArray.length<2) {
-    	var newAttr = new com.ibm.xsp.complex.Attr(attrArray[0], ""); 
+    	var newAttr = new com.ibm.xsp.complex.Attr(attrArray[0], "");
+    	newAttr.setMinimized(true); 
     }
     else {
     	var newAttr = new com.ibm.xsp.complex.Attr(attrArray[0], attrArray[1]);  
@@ -14,6 +15,7 @@
     panel.addAttr(newAttr);
   }
 }
+print(panel.getAttrs());
 }]]></xp:this.afterPageLoad>
   <xp:panel id="vComponent" tagName="${javascript:compositeData.tag;}">
     <xp:this.attrs>
