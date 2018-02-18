@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+ <script src="js/amd_disable.js"></script>
+ <script src="js/vue.min.js"></script>
+ <script src="js/vuetify.min.js"></script>
+ <script src="js/vueApp.js"></script>
+ <script src="js/amd_enable.js"></script>
+</xp:view>

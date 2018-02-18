@@ -3,15 +3,11 @@
     <styleSheet href="css/materialdesignicons.min.css" />
     <styleSheet href="css/roboto.min.css" />
     <styleSheet href="css/fa_all.min.css" />
-    
-    <script src="js/amd_disable.js" clientSide="true" />
-    <script src="js/vue.js" clientSide="true" />
-
-    <script src="js/amd_enable.js" clientSide="true" />
- 
+    <styleSheet href="css/vuetify.min.css" />
+   
     <metaData>
       <name>viewport</name>
-      <content>width=device-width, initial-scale=1, shrink-to-fit=no</content>
+      <content>width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui</content>
     </metaData>
     <metaData>
       <httpEquiv>x-ua-compatible</httpEquiv>

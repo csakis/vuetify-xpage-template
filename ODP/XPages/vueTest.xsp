@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core" createForm="false">
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" createForm="false" xmlns:xc="http://www.ibm.com/xsp/custom">
+<style>
+  [v-cloak] {
+    display: none;
+  }
+</style>
  
-  <div id="app">
-    <h1>{{message}}</h1>
-  </div>
- <script src="js/vueApp.js"></script>
+  <xp:div>
+    <xp:this.attrs>
+      <xp:attr name="v-cloak" minimized="true" value=""></xp:attr>
+      <xp:attr name="id" value="app"></xp:attr>
+    </xp:this.attrs>
+    <v-app>
+      <v-content>
+        <v-container>
+          <h1>{{message}}</h1>
+        </v-container>
+      </v-content>
+    </v-app>
+  </xp:div>
+
+  <xc:devVueScripts></xc:devVueScripts>
 </xp:view>
