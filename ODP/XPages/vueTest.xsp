@@ -5,14 +5,18 @@
       <xp:attr name="v-cloak" minimized="true" value=""></xp:attr>
       <xp:attr name="id" value="app"></xp:attr>
     </xp:this.attrs>
-    <v-app>
-      <v-content>
-        <v-container>
-          <h1>{{message}}</h1>
+    <xc:vApp theme="dark">
+     <v-content>
+        <v-container>        
+          <h1>
+            {{message}}
+            </h1>
+          <xp:div styleClass="blue darken-4"></xp:div>
+          <xc:mdiIcon iconName="airplane-off"></xc:mdiIcon>
+            <i class="far fa-user"></i>
         </v-container>
       </v-content>
-    </v-app>
+    </xc:vApp>   
   </xp:div>
-
   <xc:devVueScripts></xc:devVueScripts>
 </xp:view>

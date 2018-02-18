@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+  <xp:panel tagName="v-app">
+    <xp:this.attrs>
+      <xp:attr name="light" minimized="true" value=" ">
+        <xp:this.loaded><![CDATA[${javascript:return (compositeData.theme=="light");}]]></xp:this.loaded>
+      </xp:attr>
+      <xp:attr name="dark" minimized="true" value=" ">
+        <xp:this.loaded><![CDATA[${javascript:return (compositeData.theme=="dark");}]]></xp:this.loaded>
+      </xp:attr>
+    </xp:this.attrs>
+    <xp:callback></xp:callback>
+  </xp:panel>
+</xp:view>
