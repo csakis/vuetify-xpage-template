@@ -8,7 +8,7 @@
     <script src="js/vue.js" clientSide="true" />
 
     <script src="js/amd_enable.js" clientSide="true" />
-    <!-- BS3 meta tags -->
+ 
     <metaData>
       <name>viewport</name>
       <content>width=device-width, initial-scale=1, shrink-to-fit=no</content>
@@ -18,48 +18,6 @@
       <content>ie-edge</content>
     </metaData>
   </resources>
-
-  <!-- Set all inputs to bootstrap styling -->
-  <control>
-    <name>Button.Command</name>
-    <property mode="concat">
-      <name>styleClass</name>
-      <value>btn</value>
-    </property>
-  </control>
-  <control>
-    <name>InputField.EditBox</name>
-    <property mode="concat">
-      <name>styleClass</name>
-      <value>form-control</value>
-    </property>
-    <property mode="override">
-      <name>showReadonlyAsDisabled</name>
-      <value>#{true}</value>
-    </property>
-  </control>
-  <control>
-    <name>InputField.TextArea</name>
-    <property mode="concat">
-      <name>styleClass</name>
-      <value>form-control</value>
-    </property>
-    <property mode="override">
-      <name>showReadonlyAsDisabled</name>
-      <value>#{true}</value>
-    </property>
-  </control>
-  <control>
-    <name>ComboBox</name>
-    <property mode="concat">
-      <name>styleClass</name>
-      <value>form-control</value>
-    </property>
-    <property mode="override">
-      <name>showReadonlyAsDisabled</name>
-      <value>#{true}</value>
-    </property>
-  </control>
   <control override="false">
     <name>ViewRoot</name>
     <property>

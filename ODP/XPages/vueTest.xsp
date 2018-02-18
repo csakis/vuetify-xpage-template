@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" createForm="false">
+ 
+  <div id="app">
+    <h1>{{message}}</h1>
+  </div>
+ <script src="js/vueApp.js"></script>
+</xp:view>
