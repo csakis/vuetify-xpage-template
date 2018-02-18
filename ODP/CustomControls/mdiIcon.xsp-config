@@ -13,10 +13,25 @@
         <in-palette>true</in-palette>
         <render-markup>&lt;?xml version='1.0' encoding='UTF-8'?&gt;&#xd;
 &lt;xp:view xmlns:xp='http://www.ibm.com/xsp/core'&gt;&#xd;
-    &lt;xp:panel style="border-color:rgb(0,0,150);border-style:dotted;border-width:2px;width:100px"&gt; &#xd;
-&lt;b&gt;Icon&lt;/b&gt;&lt;br/&gt;	&#xd;
-&lt;%=this.iconName %&gt;&lt;br /&gt;&lt;%=this.extraClass %&gt;&#xd;
-    &lt;/xp:panel&gt;&#xd;
+  &lt;xp:div&gt;&#xd;
+    &lt;xp:span style="font-weight:bold;"&gt;&amp;lt;mdi-icon &#xd;
+&lt;xp:span style="font-weight:bold;font-weight:bold;color:rgb(0,128,0)"&gt;&#xd;
+      &lt;%if (this.iconName) {%&gt;&#xd;
+      icon="&lt;%=this.iconName%&gt;"&#xd;
+      &lt;%}%&gt;&#xd;
+&lt;/xp:span&gt;&#xd;
+    &lt;xp:span style="font-weight:bold;font-weight:bold;color:rgb(128,0,0)"&gt;&#xd;
+      &lt;%if (this.extraClass) {%&gt;&#xd;
+      class="&lt;%=this.extraClass%&gt;"&#xd;
+      &lt;%}%&gt;&#xd;
+&lt;/xp:span&gt;&amp;gt;&#xd;
+&lt;/xp:span&gt;&#xd;
+    &lt;br /&gt;&#xd;
+   &#xd;
+   &#xd;
+    &lt;xp:span style="font-weight:bold;"&gt;&amp;lt;/mdi-icon&amp;gt;&lt;/xp:span&gt;&#xd;
+  &lt;/xp:div&gt;&#xd;
+&#xd;
 &lt;/xp:view&gt;</render-markup>
       </designer-extension>
     </composite-extension>

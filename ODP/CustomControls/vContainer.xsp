@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core">
-  <xp:panel tagName="v-app">
+  <xp:panel tagName="v-container">
     <xp:this.attrs>
-      <xp:attr minimized="true" value=" " name="#{javascript:compositeData.theme}">
-      </xp:attr>
+      <xp:attr loaded="${javascript: return (compositeData.fluid);}" name="fluid" minimized="true" value=" "></xp:attr>
     </xp:this.attrs>
     <xp:callback></xp:callback>
   </xp:panel>
