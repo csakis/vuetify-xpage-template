@@ -31,6 +31,7 @@
               </xc:vComponent>
 
               <xc:vComponent tag="v-card">
+                
                 <xc:vComponent tag="v-card-title">
 
                   Use Google's location service?
