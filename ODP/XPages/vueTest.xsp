@@ -7,7 +7,10 @@
     </xp:this.attrs>
     <xc:vApp>
       <xc:vContent>
-        <xc:vContainer fluid="false">
+        <xc:vComponent tag="v-container">
+          <xc:this.attribute>
+            <xp:attr name="fluid" value=" " minimized="true"></xp:attr>
+          </xc:this.attribute>
           <h1>{{message}}</h1>
           <xc:vComponent tag="v-layout">
 
@@ -25,13 +28,13 @@
                 Open Dialog
                 <xc:this.attribute>
                   <xp:attr name="color" value="primary"></xp:attr>
-                 
+
                   <xp:attr name="slot" value="activator"></xp:attr>
                 </xc:this.attribute>
               </xc:vComponent>
 
               <xc:vComponent tag="v-card">
-                
+
                 <xc:vComponent tag="v-card-title">
 
                   Use Google's location service?
@@ -70,10 +73,11 @@
             </xc:vComponent><!-- v-dialog -->
 
           </xc:vComponent><!-- v-layout -->
-        </xc:vContainer>
+        </xc:vComponent>
       </xc:vContent>
     </xc:vApp>
   </xp:div>
   <xc:devVueScripts></xc:devVueScripts>
+   <script src="js/vueApp.js"></script>
 
 </xp:view>
