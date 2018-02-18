@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+  <xp:this.afterPageLoad><![CDATA[#{javascript:if (compositeData.attribute){
+  var panel = getComponent('vComponent');
+  var length =compositeData.attribute.length;
+  for(var i=0; i<length; i++){
+    var attrArray = compositeData.attribute[i].split("|");
+    if (attrArray.length<2) {
+    	var newAttr = new com.ibm.xsp.complex.Attr(attrArray[0], ""); 
+    }
+    else {
+    	var newAttr = new com.ibm.xsp.complex.Attr(attrArray[0], attrArray[1]);  
+      }
+    panel.addAttr(newAttr);
+  }
+}
+}]]></xp:this.afterPageLoad>
+  <xp:panel id="vComponent" tagName="${javascript:compositeData.tag;}">
+    <xp:this.attrs>
+      <xp:attr loaded="${javascript: return (compositeData.fluid);}" name="fluid" minimized="true" value=" "></xp:attr>
+    </xp:this.attrs>
+
+
+    <xp:callback></xp:callback>
+  </xp:panel>
+</xp:view>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config>
+  <faces-config-extension>
+    <namespace-uri>http://www.ibm.com/xsp/custom</namespace-uri>
+    <default-prefix>xc</default-prefix>
+  </faces-config-extension>
+  <composite-component>
+    <component-type>vComponent</component-type>
+    <composite-name>vComponent</composite-name>
+    <composite-file>/vComponent.xsp</composite-file>
+    <composite-extension>
+      <designer-extension>
+        <in-palette>true</in-palette>
+        <render-markup>&lt;?xml version='1.0' encoding='UTF-8'?&gt;&#xd;
+&lt;xp:view xmlns:xp='http://www.ibm.com/xsp/core'&gt;&#xd;
+  &lt;xp:div&gt;&#xd;
+    &lt;xp:span style="font-weight:bold;"&gt;&amp;lt;&#xd;
+      &lt;%=this.tag%&gt;&#xd;
+&lt;%if (this.attribute.length&gt;0) {%&gt;&#xd;
+        &lt;xp:span style="font-weight:bold;font-weight:bold;color:rgb(0,128,0)"&gt; &#xd;
+          &lt;%for(var x=0;x&lt;this.attribute.length;x++){%&gt;&#xd;
+             &lt;%var a=eval(""+this.attribute+"");%&gt;&lt;%=a[x]%&gt;&#xd;
+              &lt;%}%&gt;&#xd;
+        &lt;/xp:span&gt;&#xd;
+&lt;%}%&gt;&#xd;
+        &lt;xp:span style="font-weight:bold;"&gt;&lt;/xp:span&gt;&amp;gt;&#xd;
+    &lt;/xp:span&gt;&#xd;
+    &lt;br /&gt;&#xd;
+    &lt;xp:callback&gt;&lt;/xp:callback&gt;&#xd;
+    &lt;br /&gt;&#xd;
+    &lt;xp:span style="font-weight:bold;"&gt;&amp;lt;/&#xd;
+      &lt;%=this.tag%&gt;&amp;gt;&lt;/xp:span&gt;&#xd;
+  &lt;/xp:div&gt;&#xd;
+&lt;/xp:view&gt;</render-markup>
+      </designer-extension>
+    </composite-extension>
+    <property>
+      <property-name>tag</property-name>
+      <property-class>string</property-class>
+      <display-name>Tag</display-name>
+    </property>
+    <property>
+      <property-name>attribute</property-name>
+      <property-class>java.util.Collection</property-class>
+      <property-extension>
+        <property-item-class>string</property-item-class>
+        <collection-property>true</collection-property>
+        <designer-extension>
+          <editor/>
+        </designer-extension>
+      </property-extension>
+    </property>
+  </composite-component>
+</faces-config>
