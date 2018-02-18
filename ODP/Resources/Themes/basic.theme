@@ -1,18 +1,12 @@
 <theme extends="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd">
   <resources>
-    <styleSheet href="bs3/css/materialdesignicons.min.css" />
-    <styleSheet href="bs3/css/materialBS3.css" />
-    <styleSheet href="bs3/css/fa.min.css" />
-    <styleSheet href="bs3/css/roboto.min.css" />
-    <styleSheet href="bs3/css/gutter.css" />
+    <styleSheet href="css/materialdesignicons.min.css" />
+    <styleSheet href="css/roboto.min.css" />
+    <styleSheet href="css/fa_all.min.css" />
     
-        
     <script src="js/amd_disable.js" clientSide="true" />
-    <script src="js/jquery.min.js" clientSide="true" />
-    <script src="js/x$.js" clientSide="true" />
     <script src="js/vue.js" clientSide="true" />
-    <script src="bs3/js/bootstrap.min.js" clientSide="true" />
-    
+
     <script src="js/amd_enable.js" clientSide="true" />
     <!-- BS3 meta tags -->
     <metaData>
@@ -24,7 +18,7 @@
       <content>ie-edge</content>
     </metaData>
   </resources>
-  
+
   <!-- Set all inputs to bootstrap styling -->
   <control>
     <name>Button.Command</name>

@@ -8,6 +8,6 @@
     <xp:button value="button" styleClass="btn-large btn-primary mdi mdi-tag"></xp:button>
     <xc:mdiIcon iconName='account-plus' extraClass="yellow"></xc:mdiIcon>
   </xp:div>
-  <i class="fa fa-user fa-3x"></i>
+  <i class="far fa-user"></i>
  
  </xp:view>

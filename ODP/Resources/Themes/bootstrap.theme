@@ -1,6 +1,0 @@
-<theme extends="basic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd">
-  <resources>
-    <styleSheet href="bs3/css/bootstrap.min.css" />
-    <styleSheet href="bs3/css/colors.min.css" />
-  </resources>
-</theme>
