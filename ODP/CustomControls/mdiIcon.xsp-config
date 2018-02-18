@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config>
+  <faces-config-extension>
+    <namespace-uri>http://www.ibm.com/xsp/custom</namespace-uri>
+    <default-prefix>xc</default-prefix>
+  </faces-config-extension>
+  <composite-component>
+    <component-type>mdiIcon</component-type>
+    <composite-name>mdiIcon</composite-name>
+    <composite-file>/mdiIcon.xsp</composite-file>
+    <composite-extension>
+      <designer-extension>
+        <in-palette>true</in-palette>
+        <render-markup>&lt;?xml version='1.0' encoding='UTF-8'?&gt;&#xd;
+&lt;xp:view xmlns:xp='http://www.ibm.com/xsp/core'&gt;&#xd;
+    &lt;xp:panel style="border-color:rgb(0,0,150);border-style:dotted;border-width:2px;width:100px"&gt; &#xd;
+&lt;b&gt;Icon&lt;/b&gt;&lt;br/&gt;	&#xd;
+&lt;%=this.iconName %&gt;&lt;br /&gt;&lt;%=this.extraClass %&gt;&#xd;
+    &lt;/xp:panel&gt;&#xd;
+&lt;/xp:view&gt;</render-markup>
+      </designer-extension>
+    </composite-extension>
+    <property>
+      <property-name>extraClass</property-name>
+      <property-class>string</property-class>
+      <description>Add extra classes here</description>
+      <property-extension>
+        <designer-extension>
+          <default-value/>
+        </designer-extension>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>iconName</property-name>
+      <property-class>string</property-class>
+      <property-extension>
+        <designer-extension>
+          <default-value/>
+        </designer-extension>
+      </property-extension>
+      <description>add the mdi name here without the mdi- prefix</description>
+    </property>
+  </composite-component>
+</faces-config>

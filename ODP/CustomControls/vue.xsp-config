@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config>
+  <faces-config-extension>
+    <namespace-uri>http://www.ibm.com/xsp/custom</namespace-uri>
+    <default-prefix>xc</default-prefix>
+  </faces-config-extension>
+  <composite-component>
+    <component-type>vue</component-type>
+    <composite-name>vue</composite-name>
+    <composite-file>/vue.xsp</composite-file>
+    <composite-extension>
+      <designer-extension>
+        <in-palette>true</in-palette>
+        <render-markup>&lt;?xml version='1.0' encoding='UTF-8'?&gt;&#xd;
+&lt;xp:view xmlns:xp='http://www.ibm.com/xsp/core'&gt;&#xd;
+&lt;xp:div&gt;&#xd;
+&lt;xp:span style="font-weight:bold;"&gt;&amp;lt;&lt;%=this.tagName%&gt;&lt;/xp:span&gt;&#xd;
+&lt;xp:span style="font-weight:bold;font-weight:bold;color:rgb(128,0,0)"&gt;&#xd;
+&lt;%if (this.extraClasses) {%&gt;&#xd;
+class="&lt;%=this.extraClasses%&gt;" &#xd;
+&lt;%}%&gt;&#xd;
+&lt;/xp:span&gt;&#xd;
+&lt;xp:span style="font-weight:bold;font-weight:bold;color:rgb(0,128,0)"&gt;&#xd;
+&lt;%if (this.attr1name){%&gt;&#xd;
+&lt;%=this.attr1name%&gt;="&lt;%=this.attr1value%&gt;" &#xd;
+&lt;%}%&gt;&#xd;
+&lt;%if (this.attr2name){%&gt;&#xd;
+&lt;%=this.attr2name%&gt;="&lt;%=this.attr2value%&gt;" &#xd;
+&lt;%}%&gt;&#xd;
+&lt;%if (this.attr3name){%&gt;&#xd;
+&lt;%=this.attr3name%&gt;="&lt;%=this.attr3value%&gt;" &#xd;
+&lt;%}%&gt;&#xd;
+&lt;/xp:span&gt;&#xd;
+&lt;xp:span style="font-weight:bold;"&gt;&gt;&lt;/xp:span&gt;	&#xd;
+&lt;br /&gt;	&#xd;
+&lt;xp:callback&gt;&lt;/xp:callback&gt;&#xd;
+&lt;br /&gt;&#xd;
+&lt;xp:span style="font-weight:bold;"&gt;&amp;lt;/&lt;%=this.tagName%&gt;&amp;gt;&lt;/xp:span&gt;&#xd;
+&lt;/xp:div&gt;&#xd;
+	&#xd;
+&lt;/xp:view&gt;</render-markup>
+      </designer-extension>
+    </composite-extension>
+    <property>
+      <property-name>extraClasses</property-name>
+      <property-class>string</property-class>
+      <property-extension>
+        <designer-extension>
+          <default-value/>
+        </designer-extension>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>attr1name</property-name>
+      <property-class>string</property-class>
+    </property>
+    <property>
+      <property-name>attr1value</property-name>
+      <property-class>string</property-class>
+    </property>
+    <property>
+      <property-name>attr2name</property-name>
+      <property-class>string</property-class>
+    </property>
+    <property>
+      <property-name>attr2value</property-name>
+      <property-class>string</property-class>
+    </property>
+    <property>
+      <property-name>attr3name</property-name>
+      <property-class>string</property-class>
+    </property>
+    <property>
+      <property-name>attr3value</property-name>
+      <property-class>string</property-class>
+    </property>
+    <property>
+      <property-name>tagName</property-name>
+      <property-class>string</property-class>
+    </property>
+  </composite-component>
+</faces-config>

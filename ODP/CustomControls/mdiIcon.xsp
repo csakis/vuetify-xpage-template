@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+  <xp:text escape="true" tagName="i">
+    <xp:this.styleClass><![CDATA[#{javascript:var className= "mdi mdi-";
+className += (compositeData.iconName)? compositeData.iconName + " ": ""; 
+className += (compositeData.extraClass)? compositeData.extraClass + " ": ""; 
+return className.trim();
+
+}]]></xp:this.styleClass>
+  </xp:text></xp:view>

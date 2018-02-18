@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+  <xp:div styleClass="container">
+    <xp:panel tagName="h1">H1 header</xp:panel>
+    <xp:panel tagName="h2">H2 header</xp:panel>
+    <xp:panel tagName="h3">H3 header</xp:panel>
+    <xp:panel tagName="h4">H4 header</xp:panel>
+    <xp:button value="button" styleClass="btn-large btn-primary mdi mdi-tag"></xp:button>
+    <xc:mdiIcon iconName='account-plus' extraClass="yellow"></xc:mdiIcon>
+  </xp:div>
+  <i class="fa fa-user fa-3x"></i>
+ 
+ </xp:view>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+  <xp:panel tagName="button" styleClass="#{javascript:return compositeData.extraClasses;}">
+    <xp:this.attrs>
+      <xp:attr>
+        <xp:this.name><![CDATA[#{javascript:compositeData.attr1name || "";}]]></xp:this.name>
+        <xp:this.value><![CDATA[#{javascript: compositeData.attr1value || "";}]]></xp:this.value>
+      </xp:attr>
+      <xp:attr>
+        <xp:this.name><![CDATA[#{javascript:compositeData.attr2name || "";}]]></xp:this.name>
+        <xp:this.value><![CDATA[#{javascript: compositeData.attr2value || "";}]]></xp:this.value>
+      </xp:attr>
+      <xp:attr>
+        <xp:this.name><![CDATA[#{javascript:compositeData.attr3name || "";}]]></xp:this.name>
+        <xp:this.value><![CDATA[#{javascript:compositeData.attr3value || "";}]]></xp:this.value>
+      </xp:attr>
+    </xp:this.attrs>
+    <xp:callback></xp:callback>
+  </xp:panel>
+</xp:view>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+	<xp:text escape="true" id="computedField1"><xp:this.value><![CDATA[#{javascript:var t = new org.csaba.test.Tester();
+t.DivisionByZero();
+t.debug;}]]></xp:this.value></xp:text>
+
+</xp:view>

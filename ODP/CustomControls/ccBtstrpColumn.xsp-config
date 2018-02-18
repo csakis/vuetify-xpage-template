@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config>
+  <faces-config-extension>
+    <namespace-uri>http://www.ibm.com/xsp/custom</namespace-uri>
+    <default-prefix>xc</default-prefix>
+  </faces-config-extension>
+  <composite-component>
+    <component-type>ccBtstrpColumn</component-type>
+    <composite-name>ccBtstrpColumn</composite-name>
+    <composite-file>/ccBtstrpColumn.xsp</composite-file>
+    <composite-extension>
+      <designer-extension>
+        <in-palette>true</in-palette>
+        <render-markup>&lt;?xml version='1.0' encoding='UTF-8'?&gt;&#xd;
+&lt;xp:view xmlns:xp='http://www.ibm.com/xsp/core'&gt;&#xd;
+    &lt;xp:panel&gt;&#xd;
+        Column &lt;br&gt;&lt;/br&gt;&#xd;
+&#xd;
+        &lt;xp:callback&gt;&lt;/xp:callback&gt;&#xd;
+    &lt;/xp:panel&gt;&#xd;
+&lt;/xp:view&gt;</render-markup>
+      </designer-extension>
+    </composite-extension>
+    <property-type>
+      <property-name>columnWidth</property-name>
+      <property>
+        <property-name>phone</property-name>
+        <property-class>string</property-class>
+        <property-extension>
+          <designer-extension>
+            <editor>com.ibm.std.Integer</editor>
+            <editor-parameter>0&#xd;
+1&#xd;
+2&#xd;
+3&#xd;
+4&#xd;
+5&#xd;
+6&#xd;
+7&#xd;
+8&#xd;
+9&#xd;
+10&#xd;
+11&#xd;
+12</editor-parameter>
+            <default-value>0</default-value>
+          </designer-extension>
+        </property-extension>
+      </property>
+      <property>
+        <property-name>tablet</property-name>
+        <property-class>string</property-class>
+        <property-extension>
+          <designer-extension>
+            <editor>com.ibm.std.Integer</editor>
+            <editor-parameter>0&#xd;
+1&#xd;
+2&#xd;
+3&#xd;
+4&#xd;
+5&#xd;
+6&#xd;
+7&#xd;
+8&#xd;
+9&#xd;
+10&#xd;
+11&#xd;
+12</editor-parameter>
+            <default-value>0</default-value>
+          </designer-extension>
+        </property-extension>
+      </property>
+      <property>
+        <property-name>laptop</property-name>
+        <property-class>string</property-class>
+        <property-extension>
+          <designer-extension>
+            <editor>com.ibm.std.Integer</editor>
+            <editor-parameter>0&#xd;
+1&#xd;
+2&#xd;
+3&#xd;
+4&#xd;
+5&#xd;
+6&#xd;
+7&#xd;
+8&#xd;
+9&#xd;
+10&#xd;
+11&#xd;
+12</editor-parameter>
+            <default-value>0</default-value>
+          </designer-extension>
+        </property-extension>
+      </property>
+      <property>
+        <property-name>desktop</property-name>
+        <property-class>string</property-class>
+        <property-extension>
+          <designer-extension>
+            <editor>com.ibm.std.Integer</editor>
+            <editor-parameter>0&#xd;
+1&#xd;
+2&#xd;
+3&#xd;
+4&#xd;
+5&#xd;
+6&#xd;
+7&#xd;
+8&#xd;
+9&#xd;
+10&#xd;
+11&#xd;
+12</editor-parameter>
+            <default-value>0</default-value>
+          </designer-extension>
+        </property-extension>
+      </property>
+      <property-extension>
+        <collection-property>false</collection-property>
+      </property-extension>
+    </property-type>
+    <property-type>
+      <property-name>columnOffset</property-name>
+      <property>
+        <property-name>phone</property-name>
+        <property-class>string</property-class>
+        <property-extension>
+          <designer-extension>
+            <editor>com.ibm.std.Integer</editor>
+            <editor-parameter>0&#xd;
+1&#xd;
+2&#xd;
+3&#xd;
+4&#xd;
+5&#xd;
+6&#xd;
+7&#xd;
+8&#xd;
+9&#xd;
+10&#xd;
+11&#xd;
+12</editor-parameter>
+            <default-value>0</default-value>
+          </designer-extension>
+        </property-extension>
+      </property>
+      <property>
+        <property-name>tablet</property-name>
+        <property-class>string</property-class>
+        <property-extension>
+          <designer-extension>
+            <editor>com.ibm.std.Integer</editor>
+            <editor-parameter>0&#xd;
+1&#xd;
+2&#xd;
+3&#xd;
+4&#xd;
+5&#xd;
+6&#xd;
+7&#xd;
+8&#xd;
+9&#xd;
+10&#xd;
+11&#xd;
+12</editor-parameter>
+            <default-value>0</default-value>
+          </designer-extension>
+        </property-extension>
+      </property>
+      <property>
+        <property-name>laptop</property-name>
+        <property-class>string</property-class>
+        <property-extension>
+          <designer-extension>
+            <editor>com.ibm.std.Integer</editor>
+            <editor-parameter>0&#xd;
+1&#xd;
+2&#xd;
+3&#xd;
+4&#xd;
+5&#xd;
+6&#xd;
+7&#xd;
+8&#xd;
+9&#xd;
+10&#xd;
+11&#xd;
+12</editor-parameter>
+            <default-value>0</default-value>
+          </designer-extension>
+        </property-extension>
+      </property>
+      <property>
+        <property-name>desktop</property-name>
+        <property-class>string</property-class>
+        <property-extension>
+          <designer-extension>
+            <editor>com.ibm.std.Integer</editor>
+            <editor-parameter>0&#xd;
+1&#xd;
+2&#xd;
+3&#xd;
+4&#xd;
+5&#xd;
+6&#xd;
+7&#xd;
+8&#xd;
+9&#xd;
+10&#xd;
+11&#xd;
+12</editor-parameter>
+            <default-value>0</default-value>
+          </designer-extension>
+        </property-extension>
+      </property>
+      <property-extension>
+        <collection-property>false</collection-property>
+      </property-extension>
+    </property-type>
+    <property>
+      <property-name>centerblock</property-name>
+      <property-class>boolean</property-class>
+      <property-extension>
+        <designer-extension>
+          <default-value>false</default-value>
+        </designer-extension>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>textcenter</property-name>
+      <property-class>boolean</property-class>
+      <property-extension>
+        <designer-extension>
+          <default-value>false</default-value>
+        </designer-extension>
+      </property-extension>
+    </property>
+  </composite-component>
+</faces-config>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config>
+  <faces-config-extension>
+    <namespace-uri>http://www.ibm.com/xsp/custom</namespace-uri>
+    <default-prefix>xc</default-prefix>
+  </faces-config-extension>
+  <composite-component>
+    <component-type>ccBsIcon</component-type>
+    <composite-name>ccBsIcon</composite-name>
+    <composite-file>/ccBsIcon.xsp</composite-file>
+    <composite-extension>
+      <designer-extension>
+        <in-palette>true</in-palette>
+        <render-markup>&lt;?xml version='1.0' encoding='UTF-8'?&gt;&#xd;
+&lt;xp:view xmlns:xp='http://www.ibm.com/xsp/core'&gt;&#xd;
+Name: &lt;%=this.iconName%&gt; | Size: &lt;%=this.iconSize%&gt; | Color: &lt;%=this.iconColor%&gt; | Spinning: &lt;%=this.iconSpinning%&gt; &#xd;
+&#xd;
+&lt;/xp:view&gt;</render-markup>
+      </designer-extension>
+    </composite-extension>
+    <property>
+      <property-name>iconName</property-name>
+      <property-class>string</property-class>
+      <property-extension>
+        <required>true</required>
+      </property-extension>
+      <description>Enter the style class name for the icon you’d like to display. You can find the list of available icons on http://fontawesome.github.io/Font-Awesome/icons/</description>
+    </property>
+    <property>
+      <property-name>iconSize</property-name>
+      <property-class>string</property-class>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <editor-parameter>fa-lg&#xd;
+fa-2x&#xd;
+fa-3x&#xd;
+fa-4x&#xd;
+fa-5x</editor-parameter>
+        </designer-extension>
+      </property-extension>
+      <description>Select the size of the icon. Leave blank if you want to use the default size</description>
+    </property>
+    <property>
+      <property-name>iconFixedWidth</property-name>
+      <property-class>boolean</property-class>
+      <property-extension>
+        <designer-extension>
+          <default-value>false</default-value>
+        </designer-extension>
+      </property-extension>
+      <description>Use to set icons at a fixed width. Great to use when different icon widths throw off alignment. Especially useful in things like nav lists and list groups.&#xd;
+Default is false.</description>
+    </property>
+    <property>
+      <property-name>iconSpinning</property-name>
+      <property-class>boolean</property-class>
+      <property-extension>
+        <designer-extension>
+          <default-value>false</default-value>
+        </designer-extension>
+      </property-extension>
+      <description>Use to get any icon to rotate. Works well with fa-spinner, fa-refresh, and fa-cog.&#xd;
+Default is false</description>
+    </property>
+    <property>
+      <property-name>iconAlignment</property-name>
+      <property-class>string</property-class>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <editor-parameter>none&#xd;
+pull-left&#xd;
+pull-right&#xd;
+center-block</editor-parameter>
+        </designer-extension>
+      </property-extension>
+      <description>Select a helper class to pull the icon to the left or right or to center it. Please see ‘http://getbootstrap.com/css/#helper-classes&#xd;
+ for more information.</description>
+    </property>
+    <property>
+      <property-name>iconColor</property-name>
+      <property-class>string</property-class>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <editor-parameter>none&#xd;
+text-muted&#xd;
+text-primary&#xd;
+text-success&#xd;
+text-info&#xd;
+text-warning&#xd;
+text-danger</editor-parameter>
+        </designer-extension>
+      </property-extension>
+      <description>Select a helper text class to add color to your icon</description>
+    </property>
+  </composite-component>
+</faces-config>

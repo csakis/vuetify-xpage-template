@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+
+	<xp:text escape="true" tagName="i">
+	  <xp:this.styleClass><![CDATA[${javascript:var className:String = 'fa';
+className += ' fa-' + compositeData.iconName;
+className += (compositeData.iconSize) ? " " + compositeData.iconSize: "";
+className += (compositeData.iconSpinning) ? " fa-spin": "";
+className += (compositeData.iconFixedWidth) ? " fa-fw": "";
+className += (compositeData.iconAlignment) ? " " + compositeData.iconAlignment: "";
+className += (compositeData.extraClass) ? " " + compositeData.extraClass: "";
+   
+return className.trim();}]]></xp:this.styleClass>
+	</xp:text>
+</xp:view>
