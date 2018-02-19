@@ -43,24 +43,21 @@
       </designer-extension>
     </composite-extension>
     <property>
+      <property-name>className</property-name>
+      <property-class>string</property-class>
+    </property>
+    <property>
       <property-name>tag</property-name>
       <property-class>string</property-class>
-      <display-name>Tag</display-name>
     </property>
     <property>
       <property-name>attribute</property-name>
       <property-class>java.util.Collection</property-class>
+      <display-name>attribute</display-name>
       <property-extension>
         <property-item-class>com.ibm.xsp.complex.Attr</property-item-class>
         <collection-property>true</collection-property>
-        <designer-extension>
-          <editor/>
-        </designer-extension>
       </property-extension>
-    </property>
-    <property>
-      <property-name>className</property-name>
-      <property-class>string</property-class>
     </property>
   </composite-component>
 </faces-config>
