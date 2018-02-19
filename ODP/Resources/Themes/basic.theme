@@ -1,9 +1,13 @@
 <theme extends="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd">
   <resources>
-  <styleSheet href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' /><!--
+  <!--
+  <styleSheet href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' />
+    -->
+    
+    <styleSheet href="css/material-icons.min.css" />
     <styleSheet href="css/materialdesignicons.min.css" />
     <styleSheet href="css/roboto.min.css" />
-    --><styleSheet href="css/fa_all.min.css" />
+    <styleSheet href="css/fa_all.min.css" />
     <styleSheet href="css/vuetify.min.css" />
     <styleSheet href="css/app.css" />
    
