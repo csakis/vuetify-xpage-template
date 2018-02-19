@@ -9,7 +9,7 @@
   }
 }
 }]]></xp:this.afterPageLoad>
-  <xp:panel id="vComponent" tagName="${javascript:compositeData.tag;}"> 
+  <xp:panel id="vComponent" tagName="${javascript:compositeData.tag;}" styleClass="${javascript:compositeData.className}">
     <xp:callback></xp:callback>
   </xp:panel>
 </xp:view>

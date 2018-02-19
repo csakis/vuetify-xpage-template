@@ -20,12 +20,18 @@
           &lt;xp:span style="font-weight:bold;font-weight:bold;color:rgb(0,128,0)"&gt;&#xd;
             &lt;%for (var x=0;x&lt;this.attribute.length;x++){%&gt;&#xd;
               &lt;%=this.attribute[x].name%&gt;&#xd;
-                &lt;%if(!this.attribute[x].minimized){%&gt;=&#xd;
-                  &lt;%=this.attribute[x].value%&gt;&#xd;
+               &lt;%if(!this.attribute[x].minimized){%&gt;=&#xd;
+                 &lt;%=this.attribute[x].value%&gt;&#xd;
                     &lt;%}%&gt;, &#xd;
                       &lt;%}%&gt;&#xd;
           &lt;/xp:span&gt;&#xd;
-          &lt;%}%&gt;&amp;gt;&#xd;
+          &lt;%}%&gt;&#xd;
+            &lt;%if (this.className) {%&gt;&#xd;
+              &lt;xp:span style="font-weight:bold;font-weight:bold;color:rgb(128,0,0)"&gt;&#xd;
+                class=&#xd;
+                &lt;%=this.className%&gt;&#xd;
+              &lt;/xp:span&gt;&#xd;
+              &lt;%}%&gt;&amp;gt;&#xd;
     &lt;/xp:span&gt;&#xd;
     &lt;br /&gt;&#xd;
     &lt;xp:callback&gt;&lt;/xp:callback&gt;&#xd;
@@ -51,6 +57,10 @@
           <editor/>
         </designer-extension>
       </property-extension>
+    </property>
+    <property>
+      <property-name>className</property-name>
+      <property-class>string</property-class>
     </property>
   </composite-component>
 </faces-config>
