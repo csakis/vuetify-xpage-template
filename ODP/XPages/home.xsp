@@ -7,7 +7,7 @@
     </xp:this.attrs>
     <xc:vComponent tag="v-app">
       <xc:this.attribute>
-        <xp:attr value="darkThemeSwitch  " name=":dark"></xp:attr>
+        <xp:attr value="isDarkTheme " name=":dark"></xp:attr>
       </xc:this.attribute>
       <xc:vComponent tag="v-container">
         <xc:navigationBar></xc:navigationBar>

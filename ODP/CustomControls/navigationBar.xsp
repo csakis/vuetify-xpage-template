@@ -17,13 +17,58 @@
       <xc:vComponent tag="v-switch">
         <xc:this.attribute>
           <xp:attr value="activator" name="slot"></xp:attr>
-          <xp:attr value="darkThemeSwitch" name="v-model"></xp:attr>
+          <xp:attr value=" " name="light" minimized="true"></xp:attr>
+          <xp:attr value="grey darken-3" name="color"></xp:attr>
+          <xp:attr value="isDarkTheme" name="v-model"></xp:attr>
           <xp:attr name="style" value="display: box; display: -moz-box; display:-webkit-box"></xp:attr>
         </xc:this.attribute>
       </xc:vComponent><!-- v-switch -->
       <span>theme switcher</span>
     </xc:vComponent> <!-- v-tooltip -->
 
+    <xc:vBtn>
+      <xc:this.attribute>
+        <xp:attr name="icon" value=" " minimized="true"></xp:attr>
+      </xc:this.attribute>
+
+      <xc:vComponent tag="v-tooltip">
+        <xc:this.attribute>
+          <xp:attr name="bottom" value=" " minimized="true"></xp:attr>
+        </xc:this.attribute>
+
+        <xc:vComponent tag="v-menu">
+          <xc:this.attribute>
+            <xp:attr name="offset-y" value=" " minimized="true"></xp:attr>
+            <xp:attr name="bottom" value=" " minimized="true"></xp:attr>
+            <xp:attr name="transition" value="scale-transition"></xp:attr>
+            <xp:attr name="slot" value="activator"></xp:attr>
+          </xc:this.attribute>
+          <xc:vComponent tag="v-icon" className="orange--text darken-2">
+            palette
+            <xc:this.attribute>
+              <xp:attr name="slot" value="activator"></xp:attr>
+            </xc:this.attribute>
+          </xc:vComponent><!-- v-icon -->
+          <xc:vComponent tag="v-list">
+
+            <xc:vComponent tag="v-list-tile">
+              <xc:this.attribute>
+                <xp:attr name="color" value="primary"></xp:attr>
+                <xp:attr name="v-for" value="(theme, i) in themeList"></xp:attr>
+                <xp:attr name=":key" value="i"></xp:attr>
+                <xp:attr name="@click" value=""></xp:attr>
+              </xc:this.attribute>
+              <xc:vComponent tag="v-list-tile-title">
+                <xc:this.attribute>
+                  <xp:attr name="v-text" value="theme"></xp:attr>
+                </xc:this.attribute>
+              </xc:vComponent><!-- v-list-tile-title -->
+            </xc:vComponent><!-- v-list-tile -->
+          </xc:vComponent><!-- v-list -->
+        </xc:vComponent><!-- v-menu -->
+        <span>Theme Selector</span>
+      </xc:vComponent> <!--  v-tooltip -->
+    </xc:vBtn>
     <xc:vComponent tag="v-btn">
       <xc:this.attribute>
         <xp:attr name="icon" value=" " minimized="true"></xp:attr>

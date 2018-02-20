@@ -1,7 +1,8 @@
 new Vue({
 	el: '#home',
 	data: {
-		darkThemeSwitch: false
+		isDarkTheme: false,
+		themeList: ["red", "green", "blue", "yellow"]
 		
 	},
 	props: {
