@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" createForm="false">
+  <xp:div>
+    <xp:this.attrs>
+      <xp:attr name="id" value="layout"></xp:attr>
+      <xp:attr name="v-cloak" value=" " minimized="true"></xp:attr>
+    </xp:this.attrs>
+    <xc:vApp theme="light">
+        <xc:vComponent tag="v-container">
+          <xc:this.attribute>
+            <xp:attr name="fluid" value=" " minimized="true"></xp:attr>
+          </xc:this.attribute>
+          <xc:vComponent tag="v-navigation-drawer" className="grey lighten-4">
+            <xc:this.attribute>
+              <xp:attr name="clipped" minimized="true" value=" "></xp:attr>
+              <xp:attr name="fixed" value=" " minimized="true"></xp:attr>
+
+              <xp:attr name="app" value=" " minimized="true"></xp:attr>
+              <xp:attr name="v-model" value="drawer"></xp:attr>
+            </xc:this.attribute>
+
+            <xc:vComponent tag="v-list" className="grey lighten-4">
+              <xc:this.attribute>
+
+                <xp:attr name="dense" value=" " minimized="true"></xp:attr>
+              </xc:this.attribute>
+              <xc:template attr1name="v-for" attr1value="(item, i) in items">
+                <xc:vComponent tag="v-layout">
+                  <xc:this.attribute>
+                    <xp:attr name="row" value=" " minimized="true"></xp:attr>
+                    <xp:attr name="v-if" value="item.heading"></xp:attr>
+                    <xp:attr name="align-center" value=" " minimized="true"></xp:attr>
+                    <xp:attr name=":key" value="i"></xp:attr>
+                  </xc:this.attribute>
+                  <xc:vComponent tag="v-flex">
+                    <xc:this.attribute>
+                      <xp:attr name="xs6" value=" " minimized="true"></xp:attr>
+                    </xc:this.attribute>
+                    <xc:vComponent tag="v-subheader">
+                      <xc:this.attribute>
+                        <xp:attr name="v-if" value="item.heading"></xp:attr>
+                      </xc:this.attribute>
+                      {{item.heading}}
+                    </xc:vComponent><!-- v-subheader -->
+                  </xc:vComponent><!-- v-flex -->
+                  <xc:vComponent tag="v-flex">
+                    <xc:this.attribute>
+                      <xp:attr name="xs6" value=" " minimized="true"></xp:attr>
+                      <xp:attr name="class" value="text-xs-right"></xp:attr>
+                    </xc:this.attribute>
+                    <xc:vComponent tag="v-btn">
+                      <xc:this.attribute>
+                        <xp:attr name="flat" value=" " minimized="true"></xp:attr>
+                        <xp:attr name="small" value="  " minimized="true"></xp:attr>
+                      </xc:this.attribute>
+                      edit
+                    </xc:vComponent><!-- v-btn -->
+                  </xc:vComponent><!-- v-flex -->
+                </xc:vComponent><!-- v-layout -->
+                <xc:vComponent tag="v-divider" className="my-3">
+                  <xc:this.attribute>
+                    <xp:attr name="dark" value=" " minimized="true"></xp:attr>
+                    <xp:attr name="v-else-if" value="item.divider"></xp:attr>
+
+                    <xp:attr name=":key" value="i"></xp:attr>
+                  </xc:this.attribute>
+                </xc:vComponent><!-- v-divider -->
+                <xc:vComponent tag="v-list-tile">
+                  <xc:this.attribute>
+                    <xp:attr name=":key" value="i"></xp:attr>
+                    <xp:attr name="@click" value=""></xp:attr>
+                    <xp:attr name="v-else" value=" " minimized="true"></xp:attr>
+                  </xc:this.attribute>
+                  <xc:vComponent tag="v-list-tile-action">
+                    <xc:vComponent tag="v-icon">{{item.icon}}</xc:vComponent><!-- v-icon -->
+                  </xc:vComponent><!-- v-list-tile-action -->
+                  <xc:vComponent tag="v-list-tile-content">
+                    <xc:vComponent tag="v-list-tile-title">
+                      <xc:this.attribute>
+                        <xp:attr name="class" value="grey--text"></xp:attr>
+                      </xc:this.attribute>
+                      {{item.text}}
+                    </xc:vComponent><!-- v-list-tile-title -->
+                  </xc:vComponent><!-- v-list-tile-content -->
+                </xc:vComponent><!-- v-list-tile -->
+              </xc:template>
+            </xc:vComponent><!-- v-list -->
+          </xc:vComponent><!-- navigation drawer -->
+
+
+          <xc:vComponent tag="v-toolbar">
+            <xc:this.attribute>
+              <xp:attr name="app" value=" " minimized="true"></xp:attr>
+              <xp:attr name="absolute" value=" " minimized="true"></xp:attr>
+              <xp:attr name="clipped-left" value=" " minimized="true"></xp:attr>
+              <xp:attr name="color" value="amber"></xp:attr>
+            </xc:this.attribute>
+
+            <xc:vComponent tag="v-toolbar-side-icon">
+              <xc:this.attribute>
+                <xp:attr name="@click.native" value="drawer = !drawer"></xp:attr>
+              </xc:this.attribute>
+            </xc:vComponent><!-- v-toolbar-side-icon -->
+            <xp:span styleClass="title ml-3 mr-5">
+              Google&#160;
+              <xp:span styleClass="text">Keep</xp:span>
+            </xp:span>
+            <xc:vComponent tag="v-text-field">
+              <xc:this.attribute>
+                <xp:attr name="solo-inverted" value=" " minimized="true"></xp:attr>
+                <xp:attr name="flat" value=" " minimized="true"></xp:attr>
+                <xp:attr name="label" value="Search"></xp:attr>
+                <xp:attr name="prepend-icon" value="search"></xp:attr>
+              </xc:this.attribute>
+            </xc:vComponent><!-- v-text-field -->
+            <xc:vComponent tag="v-spacer"></xc:vComponent>
+          </xc:vComponent><!-- v-toolbar -->
+
+
+          <xc:vContent>
+            <xc:vComponent tag="v-container" className="grey lighten-4">
+              <xc:this.attribute>
+                <xp:attr name="fluid" value=" " minimized="true"></xp:attr>
+                <xp:attr name="fill-height" value=" " minimized="true"></xp:attr>
+
+              </xc:this.attribute>
+
+              <xc:vComponent tag="v-layout">
+                <xc:this.attribute>
+                  <xp:attr name="justify-center" value=" " minimized="true"></xp:attr>
+                  <xp:attr name="align-center" value=" " minimized="true"></xp:attr>
+                </xc:this.attribute>
+
+                <xc:vComponent tag="v-flex">
+                  <xc:this.attribute>
+                    <xp:attr name="shrink" value=" " minimized="true"></xp:attr>
+                  </xc:this.attribute>
+
+                  <xc:vComponent tag="v-tooltip">
+                    <xc:this.attribute>
+                      <xp:attr name="right" minimized="true" value="  "></xp:attr>
+                    </xc:this.attribute>
+
+                    <xc:vComponent tag="v-btn">
+
+                      <xc:this.attribute>
+                        <xp:attr name="icon" value=" " minimized="true"></xp:attr>
+                        <xp:attr name="large" value=" " minimized="true"></xp:attr>
+                        <xp:attr name=":href" value="source"></xp:attr>
+                        <xp:attr name="target" value="_blank"></xp:attr>
+                        <xp:attr name="slot" value="activator"></xp:attr>
+
+                      </xc:this.attribute>
+                      <xc:vComponent tag="v-icon">
+                        <xc:this.attribute>
+                          <xp:attr minimized="true" name="large" value=" "></xp:attr>
+                        </xc:this.attribute>
+                      </xc:vComponent>
+
+                      <xc:vComponent tag="v-icon">
+                        <xc:this.attribute>
+                          <xp:attr name="large" value=" " minimized="true"></xp:attr>
+                        </xc:this.attribute>
+                        code
+                      </xc:vComponent>
+                    </xc:vComponent><!-- v-btn -->
+
+                    <xp:span>Source</xp:span>
+                  </xc:vComponent><!-- v-tooltip -->
+                  <xc:vPanel title="My title">
+                    <xp:this.facets>
+                      <xp:div xp:key="facet_1" style="height:150px, border: 1px solid black;">Hello</xp:div>
+                    </xp:this.facets>
+
+                  </xc:vPanel>
+                  <xc:vPanel title="My other title">
+                    <xp:this.facets>
+                      <xp:div xp:key="facet_1" style="height:150px, border: 1px solid red;">Kukcus</xp:div>
+                    </xp:this.facets>
+
+                  </xc:vPanel>
+                </xc:vComponent><!-- v-flex -->
+              </xc:vComponent><!-- v-layout -->
+            </xc:vComponent><!-- v-container -->
+          </xc:vContent>
+          </xc:vComponent>
+    </xc:vApp>
+  </xp:div> <!-- vueLayout -->
+
+  <xc:devVueScripts></xc:devVueScripts>
+  <script src="js/vueLayout.js"></script>
+</xp:view>

@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
-  <xp:div styleClass="container">
-    <xp:panel tagName="h1">H1 header</xp:panel>
-    <xp:panel tagName="h2">H2 header</xp:panel>
-    <xp:panel tagName="h3">H3 header</xp:panel>
-    <xp:panel tagName="h4">H4 header</xp:panel>
-    <xp:button value="button" styleClass="btn-large btn-primary mdi mdi-tag"></xp:button>
-    <xc:mdiIcon iconName='account-plus' extraClass="yellow"></xc:mdiIcon>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" createForm="false">
+  <xp:div>
+    <xp:this.attrs>
+      <xp:attr value=" " name="v-cloak" minimized="true"></xp:attr>
+      <xp:attr name="id" value="home"></xp:attr>
+    </xp:this.attrs>
+    <xc:vComponent tag="v-app">
+      <xc:this.attribute>
+        <xp:attr value="darkThemeSwitch  " name=":dark"></xp:attr>
+      </xc:this.attribute>
+      <xc:vComponent tag="v-container">
+        <xc:navigationBar></xc:navigationBar>
+      </xc:vComponent><!-- v-container -->
+    </xc:vComponent><!-- v-app -->
   </xp:div>
-  <i class="far fa-user"></i>
 
- ></xp:view>
+  <xc:devVueScripts></xc:devVueScripts>
+  <script src="js/vuehome.js"></script>
+</xp:view>

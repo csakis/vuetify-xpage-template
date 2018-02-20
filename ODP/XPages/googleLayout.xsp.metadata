@@ -3,10 +3,10 @@
   <item name="$Flags">
     <text>gC~4K</text>
   </item>
-  <item name="$TITLE">
-    <text>layout.xsp</text>
+  <item name="$TITLE" sign="true">
+    <text>googleLayout.xsp</text>
   </item>
   <item name="$FileNames" sign="true">
-    <text>layout.xsp</text>
+    <text>googleLayout.xsp</text>
   </item>
 </note>
