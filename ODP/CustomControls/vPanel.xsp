@@ -2,9 +2,11 @@
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
   <xp:this.beforePageLoad><![CDATA[#{javascript:var panelTitle = compositeData.title}]]></xp:this.beforePageLoad>
   <xc:vComponent tag="v-expansion-panel">
+  
     <xc:vComponent tag="v-expansion-panel-content">
       <xc:this.attribute>
-        <xp:attr name="expand-icon" value="mdi-menu-up"></xp:attr>
+        <xp:attr name="expand-icon" value="mdi-chevron-up"></xp:attr>
+
       </xc:this.attribute>
       <xp:div>
         <xp:this.attrs>
@@ -12,13 +14,13 @@
         </xp:this.attrs>
         <xp:text escape="true" value="${javascript:return panelTitle;}"></xp:text>
       </xp:div>
-     
+
       <xc:vComponent tag="v-card">
 
         <xc:vComponent tag="v-card-text">
-         <xp:callback facetName="facet_1"></xp:callback>
+          <xp:callback facetName="facet_1"></xp:callback>
         </xc:vComponent><!-- v-card-text -->
       </xc:vComponent><!-- v-card -->
-      </xc:vComponent><!-- v-expansion-panel-content -->
+    </xc:vComponent><!-- v-expansion-panel-content -->
   </xc:vComponent><!-- v-expansion-panel -->
 </xp:view>

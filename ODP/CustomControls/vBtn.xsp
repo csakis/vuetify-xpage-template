@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+  <xp:this.afterPageLoad><![CDATA[#{javascript:if (compositeData.attribute){
+  var panel = getComponent('vComponent');
+  var length =compositeData.attribute.length;
+  for(var i=0; i<length; i++){
+   // var attrArray = compositeData.attribute[i].split("|");
+    panel.addAttr(compositeData.attribute[i]);
+  }
+}
+}]]></xp:this.afterPageLoad>
+  <xp:panel styleClass="${javascript:compositeData.className}" tagName="v-btn" id="vComponent">
+    <xp:callback></xp:callback>
+  </xp:panel>
+</xp:view>

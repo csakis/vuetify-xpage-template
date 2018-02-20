@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config>
+  <faces-config-extension>
+    <namespace-uri>http://www.ibm.com/xsp/custom</namespace-uri>
+    <default-prefix>xc</default-prefix>
+  </faces-config-extension>
+  <composite-component>
+    <component-type>vSpacer</component-type>
+    <composite-name>vSpacer</composite-name>
+    <composite-file>/vSpacer.xsp</composite-file>
+    <composite-extension>
+      <designer-extension>
+        <in-palette>true</in-palette>
+        <render-markup>&lt;?xml version='1.0' encoding='UTF-8'?&gt;&#xd;
+&lt;xp:view xmlns:xp='http://www.ibm.com/xsp/core'&gt;&#xd;
+&lt;xp:div&gt;&#xd;
+&lt;xp:span style="font-weight:bold;"&gt;&amp;lt;v-spacer&#xd;
+&lt;xp:span style="font-weight:bold;font-weight:bold;color:rgb(128,0,0)"&gt;&#xd;
+&#xd;
+&lt;/xp:span&gt;&amp;gt;&#xd;
+&#xd;
+&lt;/xp:span&gt;&#xd;
+&lt;br /&gt;	&#xd;
+&lt;xp:callback&gt;&lt;/xp:callback&gt;&#xd;
+&lt;br /&gt;&#xd;
+&lt;xp:span style="font-weight:bold;"&gt;&amp;lt;/v-spacer&amp;gt;&lt;/xp:span&gt;&#xd;
+&lt;/xp:div&gt;&#xd;
+	&#xd;
+&lt;/xp:view&gt;</render-markup>
+      </designer-extension>
+    </composite-extension>
+  </composite-component>
+</faces-config>
