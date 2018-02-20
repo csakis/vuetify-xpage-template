@@ -1,12 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<note xmlns="http://www.lotus.com/dxl" class="form">
-  <item name="$Flags">
-    <text>gC~4K</text>
-  </item>
-  <item name="$TITLE">
-    <text>vueTest.xsp</text>
-  </item>
-  <item name="$FileNames" sign="true">
-    <text>vueTest.xsp</text>
-  </item>
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.10" replicaid="8725823A00587EE6" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="34a" sequence="8" unid="B8DAA056235B30BF8725823A00588715">
+<created><datetime>20180220T090657,49-07</datetime></created>
+<modified><datetime>20180220T090804,99-07</datetime></modified>
+<revised><datetime>20180220T090804,98-07</datetime></revised>
+<lastaccessed><datetime>20180220T090804,98-07</datetime></lastaccessed>
+<addedtofile><datetime>20180220T090657,61-07</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=admin admin/O=lanl</name></updatedby>
+<wassignedby><name>CN=admin admin/O=lanl</name></wassignedby>
+<item name="$Flags"><text>gC~4K</text></item>
+<item name="$TITLE"><text>vueTest.xsp</text></item>
+
+
+<item name="$FileNames" sign="true"><text>vueTest.xsp</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+
+
 </note>
