@@ -57,6 +57,9 @@
       <property-extension>
         <property-item-class>com.ibm.xsp.complex.Attr</property-item-class>
         <collection-property>true</collection-property>
+        <designer-extension>
+          <editor>com.ibm.designer.domino.xsp.attrvalpicker</editor>
+        </designer-extension>
       </property-extension>
     </property>
   </composite-component>

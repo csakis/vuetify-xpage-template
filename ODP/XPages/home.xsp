@@ -9,12 +9,30 @@
       <xc:this.attribute>
         <xp:attr value="isDarkTheme " name=":dark"></xp:attr>
       </xc:this.attribute>
+       <xc:navigationBar></xc:navigationBar>
       <xc:vComponent tag="v-container">
-        <xc:navigationBar></xc:navigationBar>
+         <xc:this.attribute>
+          <xp:attr name="fluid" value=" " minimized="true"></xp:attr>
+          <xp:attr name="text-xs-center" value=" " minimized="true"></xp:attr>
+        </xc:this.attribute> 
+        
+        <xc:vComponent tag="v-layout">
+          <xc:this.attribute>
+            <xp:attr name="row" value=" " minimized="true"></xp:attr>
+            <xp:attr name="wrap" value=" " minimized="true"></xp:attr>
+          </xc:this.attribute>
+          <xc:vComponent tag="v-flex">
+          
+            <xc:this.attribute>
+              <xp:attr name="sm12 offset-sm0 lg8 offset-lg2 xl6 offset-xl3" value=" " minimized="true"></xp:attr>
+            </xc:this.attribute>
+              <xc:mainTabContent></xc:mainTabContent>
+            </xc:vComponent> <!-- v-flex -->
+          </xc:vComponent><!-- v-layout -->
       </xc:vComponent><!-- v-container -->
     </xc:vComponent><!-- v-app -->
-  </xp:div>
+  </xp:div> <!-- home div -->
 
   <xc:devVueScripts></xc:devVueScripts>
-  <script src="js/vuehome.js"></script>
+  <script src="js/vueHome.js"></script>
 </xp:view>

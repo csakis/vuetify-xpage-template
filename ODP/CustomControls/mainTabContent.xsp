@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+  <xc:vComponent tag="v-tabs">
+    <xc:this.attribute>
+      <xp:attr minimized="true" name="fixed-tabs" value=" "></xp:attr>
+      <xp:attr name="v-model" value="tab"></xp:attr>
+    </xc:this.attribute>
+    <xc:vComponent tag="v-tabs-slider"></xc:vComponent>
+    <xc:vComponent tag="v-tab">
+      <xc:this.attribute>
+        <xp:attr name="v-for" value="tabItem in tabList"></xp:attr>
+        <xp:attr name=":href" value="'#'+tabItem"></xp:attr>
+        
+        <xp:attr name=":key" value="tabItem"></xp:attr>
+      </xc:this.attribute>
+      {{tabItem}}
+    </xc:vComponent><!-- v-tab -->
+   </xc:vComponent><!-- v-tabs -->
+  <xc:vComponent tag="v-tabs-items">
+    <xc:this.attribute>
+      <xp:attr name="v-model" value="tab"></xp:attr>
+    </xc:this.attribute>
+    <xc:vComponent tag="v-tab-item">
+      <xc:this.attribute>
+        <xp:attr name="v-for" value="tabItem in tabList"></xp:attr>
+        <xp:attr name=":key" value="tabItem"></xp:attr>
+        <xp:attr name=":id" value="tabItem"></xp:attr>
+      </xc:this.attribute>
+      <xc:vComponent tag="v-card">
+
+        <xc:vComponent tag="v-card-text">
+          {{tabItem}}
+        </xc:vComponent> <!-- v-card-text -->
+      </xc:vComponent> <!-- v-card -->
+    </xc:vComponent><!-- v-tab-item -->
+  </xc:vComponent> <!-- v-tabs-items -->
+
+</xp:view>

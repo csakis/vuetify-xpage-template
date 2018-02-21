@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
   <xc:vComponent tag="v-toolbar">
-    <xc:this.attribute>
-      <xp:attr name="absolute" value=" " minimized="true"></xp:attr>
-      <xp:attr name="dense" value=" " minimized="true"></xp:attr>
+    <xc:this.attribute>  
+    <xp:attr name="dense" value=" " minimized="true"></xp:attr> 
       <xp:attr name="dark" value=" " minimized="true"></xp:attr>
       <xp:attr name="color" value="primary"></xp:attr>
     </xc:this.attribute>
-    <xc:vComponent tag="v-toolbar-title">Raven</xc:vComponent><!-- v-toolbar-title -->
+    <xc:vComponent tag="v-toolbar-title">
+    Vuetify Demo
+    </xc:vComponent> <!-- v-toolbar-title -->
     <xc:vSpacer></xc:vSpacer>
-
     <xc:vComponent tag="v-tooltip">
       <xc:this.attribute>
         <xp:attr name="bottom" value=" " minimized="true"></xp:attr>
+        <xp:attr name="debounce" value="1"></xp:attr>
       </xc:this.attribute>
       <xc:vComponent tag="v-switch">
         <xc:this.attribute>
@@ -34,6 +35,7 @@
       <xc:vComponent tag="v-tooltip">
         <xc:this.attribute>
           <xp:attr name="bottom" value=" " minimized="true"></xp:attr>
+          <xp:attr name="debounce" value="1"></xp:attr>
         </xc:this.attribute>
 
         <xc:vComponent tag="v-menu">
