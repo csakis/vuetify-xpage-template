@@ -26,8 +26,7 @@
         <xp:attr name=":key" value="tabItem"></xp:attr>
         <xp:attr name=":id" value="tabItem"></xp:attr>
       </xc:this.attribute>
-      <xc:vComponent tag="v-card">
-
+      <xc:vComponent tag="v-card">      
         <xc:vComponent tag="v-card-text">
           {{tabItem}}
         </xc:vComponent> <!-- v-card-text -->

@@ -6,49 +6,36 @@
       <xp:attr name="v-cloak" value=" " minimized="true"></xp:attr>
     </xp:this.attrs>
     <xc:vComp tagName="v-app light">
-
       <xc:vComp tagName="v-container fluid">
-
         <xc:vComp tagName="v-navigation-drawer clipped fixed app v-model='drawer'" extraClasses="grey lighten-4">
-
           <xc:vComp tagName="v-list dense" extraClasses="grey lighten-4">
-
             <xc:vComp tagName="template v-for='(item, i) in items'">
-
-              <xc:vComp tagName="v-layout row align-center v-if='item.heading'">
-
+              <xc:vComp tagName="v-layout row align-center v-if='item.heading':key='i'">
                 <xc:vComp tagName="v-flex xs6" extraClasses="text-xs-right">
-                  <xc:vComp tagName="v-subheader v-if='item.heading'"></xc:vComp>
-
-                  <xc:vComp tagName="v-btn flat small">edit</xc:vComp>
-
-                 </xc:vComp><!-- v-flex -->
+                  <xc:vComp tagName="v-subheader v-if='item.heading'">{{item.heading}}</xc:vComp>
+                   </xc:vComp><!-- v-flex -->
+                  <xc:vComp tagName="v-flex xs6" extraClasses="text-xs-right">
+                    <xc:vComp tagName="v-btn flat small">edit</xc:vComp>
+                  </xc:vComp>
               </xc:vComp>
-
               <xc:vComp tagName="v-divider dark v-else-if='item.divider' :key='i'">
-              
               </xc:vComp>
-              
               <xc:vComp tagName="v-list-tile @click='' :key='i' v-else">
-             
-              <xc:vComp tagName="v-list-tile-action">
-
-              <xc:vComp tagName="v-icon">
-              {{item.icon}}
-              </xc:vComp></xc:vComp>
-               <xc:vComp tagName="v-list-tile-content">
-              
-              <xc:vComp tagName="v-list-tile-title" extraClasses="grey--text">{{item.text}}</xc:vComp>
+                <xc:vComp tagName="v-list-tile-action">
+                  <xc:vComp tagName="v-icon">
+                    {{item.icon}}
+                  </xc:vComp>
+                </xc:vComp>
+                <xc:vComp tagName="v-list-tile-content">
+                  <xc:vComp tagName="v-list-tile-title" extraClasses="grey--text">{{item.text}}</xc:vComp>
+                </xc:vComp>
               </xc:vComp>
-              </xc:vComp>
-              </xc:vComp>
+            </xc:vComp>
           </xc:vComp><!-- v-list -->
         </xc:vComp> <!-- navigation-drawer -->
       </xc:vComp><!-- v-container -->
     </xc:vComp> <!-- v-app -->
-
   </xp:div> <!-- vueLayout -->
-
   <xc:devVueScripts></xc:devVueScripts>
   <script src="js/vueLayout.js"></script>
 </xp:view>
