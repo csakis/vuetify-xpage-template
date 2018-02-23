@@ -1,15 +1,9 @@
-<?xml version='1.0' encoding='utf-8'?>
-<view xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.10'
- replicaid='8725823A00587EE6' showinmenu='true' publicaccess='false' default='true'
- noviewformat='true'>
-<noteinfo noteid='11a' unid='81A2CD0C9B43C57B8725823A00587EF7' sequence='2'>
-<created><datetime>20180220T090636,71-07</datetime></created>
-<modified><datetime>20180220T090805,21-07</datetime></modified>
-<revised><datetime>20180220T090805,20-07</datetime></revised>
-<lastaccessed><datetime>20180220T090805,20-07</datetime></lastaccessed>
-<addedtofile><datetime>20180220T090636,72-07</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=admin admin/O=lanl</name></updatedby>
-<wassignedby><name>CN=admin admin/O=lanl</name></wassignedby><code event='selection'><formula
->SELECT @All</formula></code>
-<item name='$FormulaClass'><text>1</text></item></view>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<view xmlns="http://www.lotus.com/dxl" showinmenu="true" publicaccess="false" default="true" noviewformat="true">
+  <code event="selection">
+    <formula>SELECT @All</formula>
+  </code>
+  <item name="$FormulaClass" sign="true">
+    <text>1</text>
+  </item>
+</view>

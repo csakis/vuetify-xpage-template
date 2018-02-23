@@ -1,22 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.10" replicaid="8725823A00587EE6" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="18e" sequence="9" unid="3F8EDF00434567BD8725823A005883F7">
-<created><datetime>20180220T090649,51-07</datetime></created>
-<modified><datetime>20180220T090804,71-07</datetime></modified>
-<revised><datetime>20180220T090804,70-07</datetime></revised>
-<lastaccessed><datetime>20180220T090804,70-07</datetime></lastaccessed>
-<addedtofile><datetime>20180220T090649,92-07</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=admin admin/O=lanl</name></updatedby>
-<wassignedby><name>CN=admin admin/O=lanl</name></wassignedby>
-<item name="$Flags"><text>gC~4;</text></item>
-<item name="$TITLE" sign="true"><text>mdiIcon.xsp</text></item>
-
-
-<item name="$FileNames" sign="true"><text>mdiIcon.xsp</text></item>
-
-
-<item name="$DesignerVersion"><text>8.5.2</text></item>
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<note xmlns="http://www.lotus.com/dxl" class="form">
+  <item name="$Flags">
+    <text>gC~4;</text>
+  </item>
+  <item name="$TITLE" sign="true">
+    <text>mdiIcon.xsp</text>
+  </item>
+  <item name="$FileNames" sign="true">
+    <text>mdiIcon.xsp</text>
+  </item>
 </note>

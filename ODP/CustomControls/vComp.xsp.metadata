@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <note xmlns="http://www.lotus.com/dxl" class="form">
   <item name="$Flags">
-    <text>gC~4K</text>
+    <text>gC~4;</text>
   </item>
-  <item name="$TITLE">
-    <text>vueTest.xsp</text>
+  <item name="$TITLE" sign="true">
+    <text>vComp.xsp</text>
   </item>
   <item name="$FileNames" sign="true">
-    <text>vueTest.xsp</text>
+    <text>vComp.xsp</text>
   </item>
 </note>
